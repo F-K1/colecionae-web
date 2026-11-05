@@ -70,3 +70,8 @@ ProjetoWEB_Colecionae/
 		├── Magic_card_back.webp
 		└── ygo.jpg
 ```
+
+## Integrantes da equipe
+
+- Felipe Kauan
+- Kauan Nepomuceno
