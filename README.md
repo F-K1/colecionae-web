@@ -54,17 +54,19 @@ Abra o arquivo `index.html` no navegador ou use o Live Server do VS Code. Não h
 ```text
 ProjetoWEB_Colecionae/
 ├── index.html
-├── pokemon.html
-├── magic.html
-├── yugioh.html
-├── styles.css
+├── pages/
+│   ├── pokemon.html
+│   ├── magic.html
+│   └── yugioh.html
+├── css/
+│   └── styles.css
 ├── README.md
 └── assets/
 	├── logos/
 	│   ├── Pokémon_Trading_Card_Game_logo.svg.webp
 	│   ├── mtg.jpeg
 	│   └── ygo.png
-	└── templates/
+	└── backgrounds/
 		├── pkmn.png
 		├── Magic_card_back.webp
 		└── ygo.jpg
