@@ -28,12 +28,14 @@ O protótipo apresenta uma tela inicial responsiva para selecionar o universo de
 Esta versão é um protótipo visual em HTML e CSS, com:
 
 - página inicial responsiva;
+- páginas estáticas de coleção para Pokémon TCG, Magic: The Gathering e Yu-Gi-Oh!;
 - cards para Pokémon TCG, Magic: The Gathering e Yu-Gi-Oh!, com imagens e texturas próprias de cada jogo;
+- resumo visual de progresso e espaços da pasta em cada coleção;
 - identidade visual baseada em `DM Sans` e `Space Grotesk`;
 - indicação visual do status do projeto e da sincronização;
-- navegação visual entre as coleções por âncoras demonstrativas.
+- navegação entre a página inicial e as coleções.
 
-Os botões de coleção ainda não abrem páginas específicas. Funcionalidades com JavaScript, banco de dados, APIs e persistência de dados serão implementadas em etapas posteriores.
+As informações das pastas ainda são demonstrativas. Funcionalidades com JavaScript, banco de dados, APIs e persistência de dados serão implementadas em etapas posteriores.
 
 ## Tecnologias
 
@@ -52,6 +54,9 @@ Abra o arquivo `index.html` no navegador ou use o Live Server do VS Code. Não h
 ```text
 ProjetoWEB_Colecionae/
 ├── index.html
+├── pokemon.html
+├── magic.html
+├── yugioh.html
 ├── styles.css
 ├── README.md
 └── assets/

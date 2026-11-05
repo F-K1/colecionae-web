@@ -392,3 +392,194 @@ body {
     .card-logo { margin-top: 28px; }
     .footer-content { align-items: flex-start; flex-direction: column; gap: 5px; }
 }
+
+.back-link {
+    display: inline-block;
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: var(--ink);
+}
+
+.collection-hero {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 76px 0 52px;
+}
+
+.collection-hero-copy {
+    max-width: 620px;
+}
+
+.collection-hero h1 {
+    margin: 12px 0 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    line-height: .92;
+    letter-spacing: -.07em;
+}
+
+.collection-hero-copy > p:last-child {
+    max-width: 440px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.collection-hero-logo {
+    width: min(290px, 35vw);
+    height: 130px;
+    padding: 12px;
+    object-fit: contain;
+    border: 2px solid var(--pokemon-blue);
+    border-radius: 22px;
+    background: rgba(255, 232, 117, .94);
+}
+
+.magic-collection .collection-hero-logo {
+    border-color: var(--magic-gold);
+    background: rgba(245, 241, 231, .92);
+}
+
+.yugioh-collection .collection-hero-logo {
+    border-color: var(--yugioh-gold);
+    background: rgba(255, 255, 255, .9);
+}
+
+.collection-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 78px;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+}
+
+.collection-summary div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px 20px;
+    border-right: 1px solid var(--line);
+}
+
+.collection-summary div:last-child {
+    border-right: 0;
+}
+
+.collection-summary span {
+    color: var(--muted);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.collection-summary strong {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+}
+
+.binder-section {
+    padding-bottom: 108px;
+    overflow-x: auto;
+}
+
+.binder-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(260px, auto));
+    gap: 14px;
+    min-width: 720px;
+}
+
+.card-slot {
+    min-height: 260px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-slot-filled {
+    color: #fff;
+    background: linear-gradient(160deg, rgba(20, 72, 140, .25), rgba(11, 34, 73, .9)), url('assets/templates/pkmn.png') center / cover;
+}
+
+.magic-collection .card-slot-filled {
+    background: linear-gradient(160deg, rgba(154, 28, 40, .25), rgba(25, 23, 28, .94)), url('assets/templates/Magic_card_back.webp') center / cover;
+}
+
+.yugioh-collection .card-slot-filled {
+    background: linear-gradient(160deg, rgba(109, 24, 54, .2), rgba(42, 8, 24, .94)), url('assets/templates/ygo.jpg') center / cover;
+}
+
+.magic-collection .slot-art {
+    color: var(--magic-gold);
+}
+
+.yugioh-collection .slot-art {
+    color: var(--yugioh-gold);
+}
+
+.card-slot-empty {
+    color: var(--muted);
+    justify-content: center;
+    border-style: dashed;
+    background: rgba(255, 255, 255, .24);
+}
+
+.slot-number {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+
+.slot-art {
+    margin-bottom: auto;
+    padding-top: 34px;
+    color: var(--pokemon-yellow);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.card-slot h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+}
+
+.card-slot p {
+    margin-top: 5px;
+    font-size: .8rem;
+    line-height: 1.4;
+}
+
+.card-slot-empty strong {
+    color: var(--ink);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card-slot-empty p {
+    max-width: 170px;
+}
+
+@media (max-width: 720px) {
+    .collection-hero { align-items: flex-start; flex-direction: column; padding: 56px 0 40px; }
+    .collection-hero-logo { width: min(290px, 100%); }
+    .collection-summary { grid-template-columns: 1fr; }
+    .collection-summary div { border-right: 0; border-bottom: 1px solid var(--line); }
+    .collection-summary div:last-child { border-bottom: 0; }
+}
