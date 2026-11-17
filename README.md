@@ -33,6 +33,7 @@ Esta versão é um protótipo visual em HTML e CSS, com:
 - resumo visual de progresso e espaços da pasta em cada coleção;
 - identidade visual baseada em `DM Sans` e `Space Grotesk`;
 - indicação visual do status do projeto e da sincronização;
+- estilos CSS separados por responsabilidade em folhas modulares;
 - navegação entre a página inicial e as coleções.
 
 As informações das pastas ainda são demonstrativas. Funcionalidades com JavaScript, banco de dados, APIs e persistência de dados serão implementadas em etapas posteriores.
@@ -59,7 +60,9 @@ ProjetoWEB_Colecionae/
 │   ├── magic.html
 │   └── yugioh.html
 ├── css/
-│   └── styles.css
+│   ├── base.css
+│   ├── home.css
+│   └── collection.css
 ├── README.md
 └── assets/
 	├── logos/
@@ -71,3 +74,8 @@ ProjetoWEB_Colecionae/
 		├── Magic_card_back.webp
 		└── ygo.jpg
 ```
+
+## Integrantes da equipe
+
+- Felipe Kauan
+- Kauan Nepomuceno
