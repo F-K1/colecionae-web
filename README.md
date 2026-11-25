@@ -32,8 +32,6 @@ Esta versão é um protótipo visual em HTML e CSS, com:
 - cards para Pokémon TCG, Magic: The Gathering e Yu-Gi-Oh!, com imagens e texturas próprias de cada jogo;
 - resumo visual de progresso e espaços da pasta em cada coleção;
 - identidade visual baseada em `DM Sans` e `Space Grotesk`;
-- indicação visual do status do projeto e da sincronização;
-- estilos CSS separados por responsabilidade em folhas modulares;
 - navegação entre a página inicial e as coleções.
 
 As informações das pastas ainda são demonstrativas. Funcionalidades com JavaScript, banco de dados, APIs e persistência de dados serão implementadas em etapas posteriores.
@@ -59,10 +57,10 @@ ProjetoWEB_Colecionae/
 │   ├── pokemon.html
 │   ├── magic.html
 │   └── yugioh.html
+├── js/
+│   └── card-preview.js
 ├── css/
-│   ├── base.css
-│   ├── home.css
-│   └── collection.css
+│   └── styles.css
 ├── README.md
 └── assets/
 	├── logos/
