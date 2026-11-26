@@ -69,11 +69,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 14px;
+    max-width: 720px;
+    margin: 0 auto;
 }
 
 .game-card {
-    min-height: 360px;
-    padding: 22px;
+    min-height: 0;
+    aspect-ratio: 5 / 7;
+    padding: 18px;
     border: 1px solid var(--ink);
     border-radius: 24px;
     overflow: hidden;
@@ -112,8 +115,10 @@
     inset: 0;
     z-index: 0;
     content: '';
-    opacity: .24;
+    opacity: .06;
     pointer-events: none;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 28%, transparent 100%);
+    mask-image: radial-gradient(ellipse at center, #000 28%, transparent 100%);
 }
 
 .game-card > * {
@@ -124,8 +129,10 @@
 .card-logo {
     width: 190px;
     height: 72px;
+    max-width: 100%;
+    flex: 0 0 auto;
     align-self: center;
-    margin: 34px 0 24px;
+    margin: 14px 0 12px;
     padding: 8px 13px;
     border-radius: 16px;
     overflow: hidden;
@@ -141,6 +148,7 @@
 }
 
 .game-card h3 {
+    margin: 0;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.55rem;
     letter-spacing: -.05em;
@@ -152,7 +160,7 @@
 
 .game-card p {
     max-width: 230px;
-    margin: 9px 0 26px;
+    margin: 8px 0 14px;
     font-size: .88rem;
     line-height: 1.45;
 }
@@ -186,7 +194,7 @@
 
 .game-card.magic::after {
     background: var(--magic-red);
-    opacity: .2;
+    opacity: .06;
     mix-blend-mode: multiply;
 }
 
@@ -196,24 +204,29 @@
 
 .game-card.yugioh::after {
     background: var(--yugioh-blue);
-    opacity: .22;
+    opacity: .06;
     mix-blend-mode: multiply;
 }
 
 .game-card .pokemon-logo {
-    width: 200px;
-    height: 104px;
-    padding: 5px 10px;
+    width: min(100%, 170px);
+    height: 96px;
+    margin: 8px 0 10px;
+    padding: 4px;
     background: rgba(255, 232, 117, .94);
     border: 2px solid var(--pokemon-blue);
 }
 
 .game-card .magic-logo {
+    width: 190px;
+    height: 72px;
     background: rgba(245, 241, 231, .92);
     border-color: var(--magic-gold);
 }
 
 .game-card .yugioh-logo {
+    width: 190px;
+    height: 72px;
     background: rgba(255, 255, 255, .9);
     border-color: var(--yugioh-gold);
 }
@@ -252,7 +265,8 @@
     }
 
     .game-card {
-        min-height: 300px;
+        width: min(100%, 230px);
+        justify-self: center;
     }
 
     .card-logo {
